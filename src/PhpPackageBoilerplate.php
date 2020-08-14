@@ -1,8 +1,8 @@
 <?php
 
-namespace Sfneal\PhpPackageBoilerplate;
+namespace Sfneal\Scopes;
 
-class PhpPackageBoilerplate
+class Scopes
 {
     // Build your next great package.
 }
