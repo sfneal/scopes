@@ -1,6 +1,6 @@
 {
     "name": "sfneal/scopes",
-    "description": "Boilerplate for PHP package repo's",
+    "description": "Add custom constraints to all queries performed on an Eloquent Model.",
     "keywords": [
         "sfneal",
         "scopes"
