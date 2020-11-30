@@ -12,3 +12,7 @@ All notable changes to `scopes` will be documented in this file
 
 ## 0.3.0 - 2020-10-07
 - add support for php 7.0-7.1
+
+
+## 0.4.0 - 2020-11-30
+- add support for php8
