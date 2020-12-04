@@ -16,3 +16,7 @@ All notable changes to `scopes` will be documented in this file
 
 ## 0.4.0 - 2020-11-30
 - add support for php8
+
+
+## 0.4.1 - 2020-12-04
+- fix Travis CI config by disabling xdebug 3
