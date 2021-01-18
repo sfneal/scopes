@@ -1,7 +1,8 @@
 # Scopes
 
+[![Packagist PHP support](https://img.shields.io/packagist/php-v/sfneal/scopes)](https://packagist.org/packages/sfneal/scopes)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sfneal/scopes.svg?style=flat-square)](https://packagist.org/packages/sfneal/scopes)
-[![Build Status](https://img.shields.io/travis/sfneal/scopes/master.svg?style=flat-square)](https://travis-ci.org/sfneal/scopes)
+[![Build Status](https://travis-ci.com/sfneal/scopes.svg?branch=master&style=flat-square)](https://travis-ci.com/sfneal/scopes)
 [![Quality Score](https://img.shields.io/scrutinizer/g/sfneal/scopes.svg?style=flat-square)](https://scrutinizer-ci.com/g/sfneal/scopes)
 [![Total Downloads](https://img.shields.io/packagist/dt/sfneal/scopes.svg?style=flat-square)](https://packagist.org/packages/sfneal/scopes)
 
