@@ -2,7 +2,6 @@
 
 namespace Sfneal\Scopes\Tests;
 
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Sfneal\Scopes\Tests\Models\People;
@@ -11,11 +10,6 @@ use Sfneal\Scopes\Tests\Providers\TestingServiceProvider;
 class TestCase extends OrchestraTestCase
 {
     use RefreshDatabase;
-
-    /**
-     * @var People|Collection
-     */
-    public $models;
 
     protected function getPackageProviders($app)
     {
@@ -38,51 +32,8 @@ class TestCase extends OrchestraTestCase
     {
         parent::setUp();
 
-        // Create model factories
-        $this->models = People::factory()
+        People::factory()
             ->count(20)
             ->create();
-
-        // Add custom factories
-        $this->addCustomFactories();
-    }
-
-    /**
-     * Add custom Factories to the model Collection.
-     *
-     * @return array
-     */
-    private static function customFactories(): array
-    {
-        return [
-            People::factory()->create([
-                'name_first' => 'Stephen',
-                'name_last' => 'Neal',
-                'address' => '72 Ice House Lane',
-                'city' => 'Franklin',
-                'state' => 'MA',
-                'zip' => '02038',
-            ]),
-            People::factory()->create([
-                'name_first' => 'Richard',
-                'name_last' => 'Neal',
-                'address' => '75 Ice House Lane',
-                'city' => 'Franklin',
-                'state' => 'MA',
-                'zip' => '02038',
-            ]),
-        ];
-    }
-
-    /**
-     * Add custom factories to the Model Collection.
-     *
-     * @return void
-     */
-    private function addCustomFactories(): void
-    {
-        foreach (self::customFactories() as $factory) {
-            $this->models->add($factory);
-        }
     }
 }
