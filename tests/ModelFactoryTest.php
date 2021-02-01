@@ -2,6 +2,7 @@
 
 namespace Sfneal\Scopes\Tests;
 
+use Exception;
 use Sfneal\Scopes\Tests\Models\People;
 
 class ModelFactoryTest extends TestCase
@@ -15,11 +16,12 @@ class ModelFactoryTest extends TestCase
      * Setup the test environment.
      *
      * @return void
+     * @throws Exception
      */
     public function setUp(): void
     {
         parent::setUp();
-        $this->model = $this->models->random();
+        $this->model = People::query()->get()->shuffle()->first();
     }
 
     /** @test */
