@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Scopes\Tests;
-
 
 use Sfneal\Scopes\Tests\Models\People;
 use Sfneal\Scopes\Tests\Models\PeopleOrderedByCreatedAt;
