@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Sfneal\Scopes\Tests\Models;
-
 
 use Sfneal\Scopes\IdOrderScope;
 
