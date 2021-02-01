@@ -24,3 +24,9 @@ All notable changes to `scopes` will be documented in this file
 
 ## 0.4.2 - 2020-12-11
 - fix support for php8
+
+
+## 1.0.0 - 2021-02-01
+- initial production release
+- add basic test suite from sfneal/builders
+- add test classes for each Scope type
