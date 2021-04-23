@@ -49,12 +49,9 @@ class OrderScope implements Scope
         // Use '-' prefix to order NULL values last
         if ($this->raw) {
             $builder->orderByRaw("-`{$this->column}` desc");
-            $builder->orderBy($this->column, $this->direction);
         }
 
         // Standard orderBy clause
-        else {
-            $builder->orderBy($this->column, $this->direction);
-        }
+        $builder->orderBy($this->column, $this->direction);
     }
 }
