@@ -15,11 +15,11 @@ class TestCase extends OrchestraTestCase
     use RefreshDatabase;
 
     /**
-    * Register package service providers.
-    *
-    * @param Application $app
-    * @return array
-    */
+     * Register package service providers.
+     *
+     * @param Application $app
+     * @return array
+     */
     protected function getPackageProviders($app)
     {
         return [
