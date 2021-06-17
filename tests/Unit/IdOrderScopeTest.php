@@ -1,9 +1,10 @@
 <?php
 
-namespace Sfneal\Scopes\Tests;
+namespace Sfneal\Scopes\Tests\Unit;
 
-use Sfneal\Scopes\Tests\Models\People;
-use Sfneal\Scopes\Tests\Models\PeopleOrderedById;
+use Sfneal\Scopes\Tests\Assets\Models\PeopleOrderedById;
+use Sfneal\Scopes\Tests\TestCase;
+use Sfneal\Testing\Models\People;
 
 class IdOrderScopeTest extends TestCase
 {

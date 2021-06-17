@@ -1,8 +1,9 @@
 <?php
 
-namespace Sfneal\Scopes\Tests\Models;
+namespace Sfneal\Scopes\Tests\Assets\Models;
 
 use Sfneal\Scopes\OrderScope;
+use Sfneal\Testing\Models\People;
 
 class PeopleOrderedByLastName extends People
 {

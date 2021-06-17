@@ -1,9 +1,10 @@
 <?php
 
-namespace Sfneal\Scopes\Tests;
+namespace Sfneal\Scopes\Tests\Unit;
 
-use Sfneal\Scopes\Tests\Models\People;
-use Sfneal\Scopes\Tests\Models\PeopleOrderedByCreatedAt;
+use Sfneal\Scopes\Tests\Assets\Models\PeopleOrderedByCreatedAt;
+use Sfneal\Scopes\Tests\TestCase;
+use Sfneal\Testing\Models\People;
 
 class CreatedOrderScopeTest extends TestCase
 {

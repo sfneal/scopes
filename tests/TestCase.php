@@ -2,25 +2,47 @@
 
 namespace Sfneal\Scopes\Tests;
 
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Sfneal\Scopes\Tests\Models\People;
-use Sfneal\Scopes\Tests\Providers\TestingServiceProvider;
+use Sfneal\Address\Models\Address;
+use Sfneal\Address\Providers\AddressServiceProvider;
+use Sfneal\Testing\Models\People;
+use Sfneal\Testing\Providers\MockModelsServiceProvider;
 
 class TestCase extends OrchestraTestCase
 {
     use RefreshDatabase;
 
+    /**
+    * Register package service providers.
+    *
+    * @param Application $app
+    * @return array
+    */
     protected function getPackageProviders($app)
     {
-        return TestingServiceProvider::class;
+        return [
+            MockModelsServiceProvider::class,
+            AddressServiceProvider::class,
+        ];
     }
 
+    /**
+     * Define environment setup.
+     *
+     * @param Application $app
+     * @return void
+     */
     protected function getEnvironmentSetUp($app)
     {
-        include_once __DIR__.'/migrations/create_people_table.php.stub';
-
+        // Migrate 'people' table
+        include_once __DIR__.'/../vendor/sfneal/mock-models/database/migrations/create_people_table.php.stub';
         (new \CreatePeopleTable())->up();
+
+        // Migrate address table
+        include_once __DIR__.'/../vendor/sfneal/address/database/migrations/create_address_table.php.stub';
+        (new \CreateAddressTable())->up();
     }
 
     /**
@@ -32,8 +54,10 @@ class TestCase extends OrchestraTestCase
     {
         parent::setUp();
 
+        // Create model factories
         People::factory()
             ->count(20)
+            ->has(Address::factory())
             ->create();
     }
 }

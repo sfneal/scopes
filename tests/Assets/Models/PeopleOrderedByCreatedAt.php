@@ -1,8 +1,9 @@
 <?php
 
-namespace Sfneal\Scopes\Tests\Models;
+namespace Sfneal\Scopes\Tests\Assets\Models;
 
 use Sfneal\Scopes\CreatedOrderScope;
+use Sfneal\Testing\Models\People;
 
 class PeopleOrderedByCreatedAt extends People
 {

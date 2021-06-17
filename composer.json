@@ -21,7 +21,8 @@
     },
     "require-dev": {
         "orchestra/testbench": ">=6.7.1",
-        "phpunit/phpunit": ">=7.5.20"
+        "phpunit/phpunit": ">=7.5.20",
+        "sfneal/mock-models": ">=0.6"
     },
     "autoload": {
         "psr-4": {
