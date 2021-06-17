@@ -30,3 +30,9 @@ All notable changes to `scopes` will be documented in this file
 - initial production release
 - add basic test suite from sfneal/builders
 - add test classes for each Scope type
+
+
+## 1.0.1 - 2021-06-17 
+- optimize Travis CI config & enable code coverage upload
+- optimize test suite by refactoring into 'Feature' & 'Unit' directories
+- add use of sfneal/mock-models test models, factories & migrations in test suites
