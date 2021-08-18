@@ -36,3 +36,7 @@ All notable changes to `scopes` will be documented in this file
 - optimize Travis CI config & enable code coverage upload
 - optimize test suite by refactoring into 'Feature' & 'Unit' directories
 - add use of sfneal/mock-models test models, factories & migrations in test suites
+
+
+## 1.0.2 - 2021-08-18
+- add sfneal/address composer dev requirement as it was removed as a dependency from sfneal/mock-models
