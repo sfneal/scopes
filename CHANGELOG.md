@@ -45,3 +45,4 @@ All notable changes to `scopes` will be documented in this file
 ## 2.0.0 - 2024-04-16
 - add CI GitHub actions
 - cut support for PHP 7
+- add support for PHP 8.1, 8.2 & 8.3
