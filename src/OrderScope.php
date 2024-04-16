@@ -28,7 +28,7 @@ class OrderScope implements Scope
      *
      * @param  string  $column
      * @param  string  $direction
-     * @param bool $raw
+     * @param  bool  $raw
      */
     public function __construct(string $column = 'order', string $direction = 'desc', bool $raw = false)
     {
