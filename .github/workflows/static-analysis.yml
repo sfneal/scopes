@@ -12,6 +12,7 @@ jobs:
   static-analysis:
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         os: [ ubuntu-latest ]
         php: [7.3, 7.4, 8.0]
