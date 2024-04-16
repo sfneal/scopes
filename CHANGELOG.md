@@ -46,3 +46,7 @@ All notable changes to `scopes` will be documented in this file
 - add CI GitHub actions
 - cut support for PHP 7
 - add support for PHP 8.1, 8.2 & 8.3
+
+
+## 2.1.0 - 2024-04-16
+- add return type hinting

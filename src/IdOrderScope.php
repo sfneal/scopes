@@ -15,7 +15,7 @@ class IdOrderScope implements Scope
      * @param  Model  $model
      * @return void
      */
-    public function apply(Builder $builder, Model $model)
+    public function apply(Builder $builder, Model $model): void
     {
         // Order returned collection by project_id (largest to smallest)
         $builder->orderBy($model->getKeyName(), 'desc');
