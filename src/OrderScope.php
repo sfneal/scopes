@@ -11,26 +11,26 @@ class OrderScope implements Scope
     /**
      * @var string Name of the column that identifies order
      */
-    private $column;
+    private string $column;
 
     /**
      * @var string Direction to order results (asc or desc)
      */
-    private $direction;
+    private string $direction;
 
     /**
      * @var bool Raw OrderBy clause to order null values last
      */
-    private $raw;
+    private bool $raw;
 
     /**
      * OrderOrderScope constructor.
      *
      * @param  string  $column
      * @param  string  $direction
-     * @param  bool  $raw
+     * @param bool $raw
      */
-    public function __construct(string $column = 'order', string $direction = 'desc', $raw = false)
+    public function __construct(string $column = 'order', string $direction = 'desc', bool $raw = false)
     {
         $this->column = $column;
         $this->direction = ucwords($direction);
@@ -44,7 +44,7 @@ class OrderScope implements Scope
      * @param  Model  $model
      * @return void
      */
-    public function apply(Builder $builder, Model $model)
+    public function apply(Builder $builder, Model $model): void
     {
         // Use '-' prefix to order NULL values last
         if ($this->raw) {
