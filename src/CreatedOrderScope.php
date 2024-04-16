@@ -7,7 +7,7 @@ class CreatedOrderScope extends OrderScope
     /**
      * CreatedOrderScope constructor.
      *
-     * @param string $direction
+     * @param  string  $direction
      */
     public function __construct(string $direction = 'desc')
     {
