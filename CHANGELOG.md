@@ -40,3 +40,8 @@ All notable changes to `scopes` will be documented in this file
 
 ## 1.0.2 - 2021-08-18
 - add sfneal/address composer dev requirement as it was removed as a dependency from sfneal/mock-models
+
+
+## 2.0.0 - 2024-04-16
+- add CI GitHub actions
+- cut support for PHP 7
