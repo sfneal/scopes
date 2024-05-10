@@ -50,3 +50,7 @@ All notable changes to `scopes` will be documented in this file
 
 ## 2.1.0 - 2024-04-16
 - add return type hinting
+
+
+## 2.1.1 - 2024-05-10
+- bump sfneal/address requirement from ^1.2 || ^2.0 to ^1.2 || ^2.0 || ^3.0
